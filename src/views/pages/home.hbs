@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh! Club</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .home-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            box-sizing: border-box;
+        }
+
+        .club-header {
+            width: 70%;
+            max-width: 900px;
+            background-color: #4a148c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px 20px 0 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+            border: 3px solid #222;
+            border-bottom: none;
+        }
+
+        .club-content {
+            width: 70%;
+            max-width: 900px;
+            min-height: 350px;
+            background-color: white;
+            border: 3px solid #222;
+            border-radius: 0 0 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .character-side {
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .character-side img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #222;
+        }
+
+        .club-description {
+            flex: 1;
+            text-align: center;
+            padding: 0 30px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="home-page">
+    <div class="club-header">
+        Yu-Gi-Oh! Club
+    </div>
+
+    <div class="club-content">
+        <div class="character-side left">
+            <img src="/images/yugi.png" alt="Yugi image">
+        </div>
+
+        <div class="club-description">
+            <p>
+                Welcome to the Yu-Gi-Oh! Club! Join other duelists to talk about cards,
+                strategies, favorite characters, and everything from classic monsters
+                to the newest decks. Whether you are a beginner or an experienced duelist,
+                there is a place for you here.
+            </p>
+        </div>
+
+        <div class="character-side right">
+            <img src="/images/kaiba.png" alt="Kaiba image">
+        </div>
+    </div>
+</div>
+</body>
+</html>
