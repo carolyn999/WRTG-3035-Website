@@ -21,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'resources')));
 app.get('/', (req, res) => {
     res.render('pages/home');
 });
+app.get('/home', (req, res) => res.render('pages/home'));
 app.get('/contact', (req, res) => res.render('pages/contact'));
 app.get('/events', (req, res) => res.render('pages/events'));
 app.get('/loanerDecks', (req, res) => res.render('pages/loanerDecks'));
