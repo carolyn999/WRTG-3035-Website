@@ -10,14 +10,19 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .home-page {
-            min-height: 100vh;
+            flex: 1;
+            max-height: fit-content;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 40px;
+            justify-content: flex-start;
+            padding: 10px 10px;
             box-sizing: border-box;
         }
 
@@ -25,11 +30,11 @@
         .club-content {
             width: 95%;
             max-width: 1400px;
-            min-height: 350px;
             display: flex;
             align-items: center;
+            gap: 40px;
             justify-content: space-between;
-            padding: 40px;
+            padding: 30px;
             box-sizing: border-box;
         }
 
@@ -38,20 +43,25 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-shrink: 0;
         }
 
         .character-side img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #222;
+            width: 350px;
+            height: 350px;
+
+        }
+
+        .character-side2 img {
+            width: 200px;
+            height: 300px;
+
         }
 
         .club-description {
             flex: 1;
             text-align: center;
-            padding: 0 30px;
+
             font-size: 1.2rem;
             line-height: 1.6;
             color: #333;
@@ -64,24 +74,35 @@
 
 
         <div class="club-content">
-            <div class="character-side left">
-                <img src="/images/imagethingy2.png" alt="image">
+            <div class="character-side">
+                <img src="/images/yugioh_char.png" alt="yugioh">
             </div>
 
             <div class="club-description">
                 <p>
-                    Welcome to the Yu-Gi-Oh! Club! Join other duelists to talk about cards,
+                    Welcome to the Yu-Gi-Oh Club! Join other duelists to talk about cards,
                     strategies, favorite characters, and everything from classic monsters
-                    to the newest decks. Whether you are a beginner or an experienced duelist,
-                    there is a place for you here.
+                    to the newest decks. We provide a space where
+                    anyone from any background can enjoy playing Yu-Gi-Oh.
                 </p>
             </div>
 
-            <div class="character-side right">
-                <img src="/images/imagethingy.png" alt="image">
+            <div class="character-side2">
+                <img src="/images/diva.jpg" alt="yugioh">
             </div>
         </div>
     </div>
+
+    <footer class="credits">
+        <p>Website Design</p>
+        <ul>
+            <li>Oliti Abdeta &mdash; <a href="mailto:janedoe@email.com">janedoe@email.com</a></li>
+            <li>Carolyn Dockhorn &mdash; <a href="mailto:janedoe@email.com">janedoe@email.com</a></li>
+            <li>Kristin Off &mdash; <a href="https://linkedin.com/in/johnsmith" target="_blank">LinkedIn</a></li>
+            <li>Carson Schlageter &mdash; <a href="https://linkedin.com/in/johnsmith" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
 </body>
+
 
 </html>
