@@ -1,0 +1,25 @@
+{
+  "name": "wrtg-3035-website",
+  "version": "1.0.0",
+  "description": "Client: Yu-Gi-Oh Club Objective: Create a website for the Yu-Gi-Oh Club that outlines: Club events, meeting times and locations, discord link, and a way to claim rental decks. Main page will include images and",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolyn999/WRTG-3035-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/carolyn999/WRTG-3035-Website/issues"
+  },
+  "homepage": "https://github.com/carolyn999/WRTG-3035-Website#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-handlebars": "^9.0.1"
+  }
+}
