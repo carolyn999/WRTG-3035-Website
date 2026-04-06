@@ -18,4 +18,11 @@ app.use(express.static(path.join(__dirname, 'resources')));
 
 //Add routes here for home, loaner decks, contact, events, etc
 
+app.get('/', (req, res) => {
+    res.render('pages/home');
+});
+app.get('/contact', (req, res) => res.render('contact'));
+app.get('/events', (req, res) => res.render('events'));
+app.get('/loanerDecks', (req, res) => res.render('loanerDecks'));
+
 app.listen(3000, () => console.log('Server running on http://localhost:3000'));
