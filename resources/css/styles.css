@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    cursor: url('/images/YuGiOh_Pyramid.cur'), auto;
 }
 
 .home-page {
