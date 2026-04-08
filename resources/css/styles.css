@@ -152,3 +152,18 @@ textarea,
         opacity: 0;
     }
 }
+
+@font-face {
+    font-family: 'YuGiOh';
+    src: url('/fonts/matrix.ttf');
+}
+
+.club-description p {
+    font-family: 'YuGiOh', serif;
+}
+
+.disclaimer {
+    font-size: 0.65rem;
+    margin-top: 8px;
+    color: rgba(109, 109, 109, 0.3);
+}
