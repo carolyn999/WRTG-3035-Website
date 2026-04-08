@@ -49,13 +49,30 @@
         .character-side img {
             width: 350px;
             height: 350px;
-
         }
 
         .character-side2 img {
             width: 200px;
             height: 300px;
+        }
 
+        @keyframes aura-pulse {
+            0% {
+                filter: drop-shadow(0 0 2px #6a0dad);
+            }
+
+            50% {
+                filter: drop-shadow(0 0 3px #9400D3);
+            }
+
+            100% {
+                filter: drop-shadow(0 0 2px #6a0dad);
+            }
+        }
+
+        .character-side img,
+        .character-side2 img {
+            animation: aura-pulse 5s ease-in-out infinite;
         }
 
         .club-description {
