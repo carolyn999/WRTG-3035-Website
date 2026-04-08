@@ -7,5 +7,26 @@
 <!-- Add the body.hbs partial here-->
 {{{body}}}
 
+<script>
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('mousemove', function (e) {
+            const colors = ['#FFD700', '#FF4500', '#00BFFF', '#9400D3'];
+
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+
+            particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            particle.style.left = e.clientX + 'px';
+            particle.style.top = e.clientY + 'px';
+            particle.style.setProperty('--x', (Math.random() - 0.5) * 60 + 'px');
+            particle.style.setProperty('--y', (Math.random() - 0.5) * 60 + 'px');
+
+            document.body.appendChild(particle);
+
+            setTimeout(() => particle.remove(), 600);
+        });
+    });
+</script>
+
 <!-- Add the footer.hbs partial here -->
-{{> footer}} 
+{{> footer}}
