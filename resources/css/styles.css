@@ -13,6 +13,15 @@ body {
     cursor: url('/images/YuGiOh_Pyramid.cur'), auto;
 }
 
+a,
+button,
+input,
+select,
+textarea,
+[onclick] {
+    cursor: url('/images/Key.cur'), pointer;
+}
+
 .home-page {
     flex: 1;
     display: flex;
