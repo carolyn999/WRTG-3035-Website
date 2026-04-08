@@ -49,20 +49,38 @@
         .character-side img {
             width: 350px;
             height: 350px;
-
         }
 
         .character-side2 img {
             width: 200px;
             height: 300px;
+        }
 
+        @keyframes aura-pulse {
+            0% {
+                filter: drop-shadow(0 0 2px #6a0dad);
+            }
+
+            50% {
+                filter: drop-shadow(0 0 3px #9400D3);
+            }
+
+            100% {
+                filter: drop-shadow(0 0 2px #6a0dad);
+            }
+        }
+
+        .character-side img,
+        .character-side2 img {
+            animation: aura-pulse 5s ease-in-out infinite;
         }
 
         .club-description {
             flex: 1;
             text-align: center;
 
-            font-size: 1.2rem;
+
+            font-size: 1.5rem;
             line-height: 1.6;
             color: #333;
         }
@@ -94,12 +112,12 @@
     </div>
 
     <footer class="credits">
-        <p>Website Design</p>
+        <p>&copy; Website Design</p>
         <ul>
-            <li>Oliti Abdeta &mdash; <a href="mailto:janedoe@email.com">janedoe@email.com</a></li>
-            <li>Carolyn Dockhorn &mdash; <a href="mailto:janedoe@email.com">janedoe@email.com</a></li>
-            <li>Kristin Off &mdash; <a href="https://linkedin.com/in/johnsmith" target="_blank">LinkedIn</a></li>
-            <li>Carson Schlageter &mdash; <a href="https://linkedin.com/in/johnsmith" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/oliti-abdeta-43927828b/">Oliti Abdeta</a></li>
+            <li> <a href="https://www.linkedin.com/in/carolyn-dockhorn/">Carolyn Dockhorn</a></li>
+            <li> <a href="https://www.linkedin.com/in/carson-schlageter/" target="_blank">Carson Schlageter</a></li>
+            <li> Kristin Off</li>
         </ul>
     </footer>
 </body>
