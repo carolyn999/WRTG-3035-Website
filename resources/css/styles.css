@@ -168,3 +168,19 @@ textarea,
     margin-top: 8px;
     color: rgba(109, 109, 109, 0.3);
 }
+.events-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.events-container p {
+    font-family: 'YuGiOh', serif;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.discord-embed {
+    width: 100%;
+}
