@@ -1,63 +1,102 @@
 <style>
+    .loaner_decks_page {
+        flex: auto;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
     .page_heading {
         padding: 10px;
     }
 
     .loaner_deck {
+        width: 50%;
         padding: 10px;
         border: 2px solid;
         border-radius: 10px;
         margin: 10px;
     }
+
+    #libromancer 
+    {
+        background-image:url(/images/libromancer.jpg);
+        background-color:darkblue;
+        background-position: center;
+        color:white;
+        text-shadow:2px 2px 2px black;
+    }
+
+    #evil_eye {
+        background-image: url(images/evil_eye.jpg);
+        background-color: darkmagenta;
+        background-position: center;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    }
 </style>
 
 <!-- Need to get deck descriptions and decklists from client. -->
-
 <!-- Presentation of decklists will depend on what format they are given in. -->
 
-<div class="page_heading">
-    <h1>Loaner Decks</h1>
-    <p>
-        These decks will be available to borrow at club meetings.
-    </p>
+<div class="loaner_decks_page">
+    <div class="page_heading">
+        <h1>Loaner Decks</h1>
+        <p>
+            These decks will be available to borrow at club meetings.
+        </p>
 
-    <p>
-        A BuffOne card or phone must be provided as collateral against theft when borrowing decks from the club.
-    </p>
-</div>
-
-<div class="loaner_deck">
-    <h3>Libromancer</h3>
-
-    <div class="deck_description">
-        Insert brief description of what the deck does.
+        <p>
+            A BuffOne card or phone must be provided as collateral against theft when borrowing decks from the club.
+        </p>
     </div>
 
-    <div class="decklist">
-        <h4>Decklist</h4>
-    </div>
-</div>
+    <div class="loaner_deck" id="libromancer">
+        <h2>Libromancer</h2>
 
-<div class="loaner_deck">
-    <h3>Evil Eye</h3>
+        <div class="deck_description" id="libromancer_description">
+            <p>Ritual summoning deck.</p>
+            <p>Use ritual spell cards to summon monsters from your hand!</p>
+        </div>
 
-    <div class="deck_description">
-        Insert brief description of what the deck does.
-    </div>
-
-    <div class="decklist">
-        <h4>Decklist</h4>
-    </div>
-</div>
-
-<div class="loaner_deck">
-    <h3>Runick</h3>
-
-    <div class="deck_description">
-        Insert brief description of what the deck does.
+        <!--
+        <div class="decklist">
+            <h4>Decklist</h4>
+        </div>
+        -->
     </div>
 
-    <div class="decklist">
-        <h4>Decklist</h4>
+    <div class="loaner_deck" id="evil_eye">
+        <h2>Evil Eye</h2>
+
+        <div class="deck_description" id="evil_eye_description">
+            <p>
+                Equip spell deck.
+            </p>
+            <p>
+                Enhance your monsters by equipping spells to them!
+            </p>
+        </div>
+
+        <!--
+        <div class="decklist">
+            <h4>Decklist</h4>
+        </div>
+        -->
     </div>
-</div>
+
+    <!--
+    <div class="loaner_deck">
+        <h3>Runick</h3>
+
+        <div class="deck_description">
+            Insert brief description of what the deck does.
+        </div>
+
+        <div class="decklist">
+            <h4>Decklist</h4>
+        </div>
+    </div>
+    -->
+    </div>
